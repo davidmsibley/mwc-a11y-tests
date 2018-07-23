@@ -87,3 +87,11 @@ div.demo__test-content .demo__grid-box label {
     display: block;
     flex: auto;
 }
+
+div.demo__test-content .demo__grid-box div {
+  margin: 0 18px 0 18px;
+}
+
+div.demo__container {
+  max-width: 1200px;
+}

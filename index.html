@@ -9,9 +9,7 @@
             }
         </style>
         <link rel="stylesheet" href="demo/demo.css">
-        <!-- <script type="module" src="./lib/myuw-app-bar/dist/external/myuw-app-bar.min.mjs"></script> -->
         <script type="module" src="./lib/myuw-app-bar/dist/bundle/myuw-app-bar.min.js"></script>
-        <!-- <script type="module" src="./lib/myuw-app-bar/dist/poly/myuw-app-bar.min.js"></script> -->
         <link rel="import" href="lib/myuw-profile/myuw-profile.html">
         <link rel="import" href="lib/myuw-drawer/myuw-drawer.html">
         <link rel="import" href="lib/myuw-drawer/myuw-drawer-link.html">
@@ -59,9 +57,22 @@
                         <button onclick="testAddCss(event, 'myuw-app-bar-bg',  newBackground.value)">Update</button>
                     </form>
                 </div>
-                <div class="demo__grid-box">Box 4</div>
-                <div class="demo__grid-box">Box 5</div>
-                <div class="demo__grid-box">Box 6</div>
+                <div class="demo__grid-box">
+                    <div><a href="bundle.html"><button name="bundle">bundle</button></a></div>
+                    <div><a href="bundle.min.html"><button name="bundlemin">Minified bundle</button></a></div>
+                </div>
+                <div class="demo__grid-box">
+                    <div><a href="polymer.html"><button name="polymer">polymer</button></a></div>
+                    <div><a href="polymer.min.html"><button name="polymermin">Minified polymer</button></a></div>
+                </div>
+                <div class="demo__grid-box">
+                    <div><a href="external.html"><button name="external">external</button></a></div>
+                    <div><a href="external.min.html"><button name="externalmin">Minified external</button></a></div>
+                </div>
+                <div class="demo__grid-box">
+                    <div><a href="vanilla.html"><button name="vanilla">vanilla</button></a></div>
+                    <div><a href="vanilla.min.html"><button name="vanillamin">Minified vanilla</button></a></div>
+                </div>
             </div>
         </div>
     </body>
